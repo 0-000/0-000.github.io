@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <?php include('fo.php')?>
+    <link type="text/css" rel="styleSheet" href="style.css" />
+    <script src='https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js' />
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery-color/jquery.color.js"> </script>
+
+    <link href="https://cdn.jsdelivr.net/gh/cnxb/simpleplayer/simpleplayer.css" rel="stylesheet">
+    <title>Kaf.Fvh</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre">
+    <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+
+   <style>
+        .textretty {
+            font-weight: 400;
+        }
+    </style>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <div class="container textretty">
+        <img src="https://cdn.v2ex.com/gravatar/b1cd9865b14da113a093860b0f71e16d?size=400" class="avatar">
+        <h1>Kaf.Fvh
+            <h6 style="color:white">
+                <player url="https://music.163.com/song/media/outer/url?id=1384986210" class="player_dark"></player>Rationalist /
+                    logical positivism // junior high school student/ INTP5w4 / Philosophy / Literature // Objective
+                    idealism / Logical positivism / Internationalism
+            </h6>
+            </player>
+        </h1>
+        <h2>Me?</h2>
+        <p>This is Kaf.Fvh. Now attending an unknown middle school in Zhejiang.
+            My hobbies are actually quite many, but I have little mastery and learning. Moreover, many are unknown. In
+            the real world, I don't think that I am a meaningful person. I don't have any advantages suitable for
+            survival in reality. Similarly, I have many disadvantages, especially appearance and personality. So I came
+            here, this cyberspace.
+            You can also find interest in purely theoretical things, perhaps because I am not good at communicating some
+            practices that require cooperation.
+            The following subjects are of interest to me but not learned:
+            Mathematics, Linguistics, Chemistry, Philosophy, Logic, Political Philosophy, Theoretical Linguistics,
+            Political Science, Computer Science, Design, Music.</p>
+        <h2>Ideology</h2>
+        <p>In pura doctrina, philosophia magnum Admiror Doleo, quòd propter unitatis. In praxi, et formula socialista
+            sum scientific physicus, et non simul tendentiam ad idealismum objective.
+            Ego opponunt male sana doctrina indoctrination informari quod rei publicae MEDICAMENTUM, auctoritatisque in
+            collectivistica raptum de legis moralis aspectibus, anti-propriae nationis amplificandae et vinosum et
+            petasum-hitting. Sed ego in gratiam de rationalismi blanditiis.</p>
+        <h2>Catch Me</h2>
+        <a href="https://cogito.ga">Blog</a>
+        <br>
+        <a href="https://twitter.com/<?php echo $config["twitter"]?>">
+            Twitter(<?php echo $twitter?>)
+        </a>
+        <br>
+        <a href="https://zhihu.com/people/<?php echo $config["zhihu"]?>">
+            Zhihu(<?php echo $zhihu?>)
+        </a>
+        <br>
+        <a href="https://space.bilibili.com/<?php echo $config["bilibili"]?>">
+            Bilibili(<?php echo $bilibili?>)
+        </a>
+        <br>
+        <a href="https://github.com/<?php echo $config["github"]?>">
+            Github(<?php echo $github?>)
+        </a>
+        <br> <br> <br>
+        <div id="vcomments"></div>
+        <div id="gitalk-container"></div>
+        <br>
+    </div>
+    <script>
+        var bg_images = new Array(
+            "https://api.9jojo.cn/acgpic?source=al&type=jn"
+        )
+
+
+
+        $("body").css("background-image", "url(" + bg_images[Math.floor((Math.random() * (bg_images.length)))] + ")");
+
+
+
+
+
+
+
+
+
+
+
+
+        if (Math.round(Math.random())) {
+            $(".textretty").css("font-family", "Averia Serif Libre");
+        } else {
+            $(".textretty").css("font-family", "Karla");
+        }
+
+        new Valine({
+            el: '#vcomments',
+            appId: 'eva8hV2BiTCd1lPahM1VlV0j-MdYXbMMI',
+            appKey: '2LF8aeyTE8AEkDmu31WDlDHO'
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cnxb/simpleplayer/simpleplayer.js"></script>
+</body>
+
+</html>
