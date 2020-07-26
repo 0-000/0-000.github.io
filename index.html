@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre">
-    <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 
    <style>
         .textretty {
@@ -70,8 +69,7 @@
             Github
         </a>
         <br> <br> <br>
-        <div id="vcomments"></div>
-        <div id="gitalk-container"></div>
+        <iframe src="./cm.html"/>
         <br>
     </div>
     <script>
@@ -100,11 +98,7 @@
             $(".textretty").css("font-family", "Karla");
         }
 
-        new Valine({
-            el: '#vcomments',
-            appId: '8EqSdi1wdxA1bbN6BNcdyruw-MdYXbMMI',
-            appKey: 'zI2oPiu2qbu7MVY5PCdOTnAE'
-        })
+
     </script>
     <script src="https://cdn.jsdelivr.net/gh/cnxb/simpleplayer/simpleplayer.js"></script>
 </body>
